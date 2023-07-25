@@ -1,8 +1,11 @@
 # Approach:
-# The cars moving left to right can be considered as moving forward and the cars moving right to left
-# can be considered as moving backward. We can imagine the cars moving on the same line in opposite
-# directions. Then, we can sort the positions of the cars in ascending order and check if a car moving
-# forward collides with a car moving backward. If yes, we increment the collision count and continue.
+# The cars moving left to right can be considered as moving
+# forward and the cars moving right to left can be considered
+# as moving backward. We can imagine the cars moving on the 
+same line in opposite directions. Then, we can sort the 
+# positions of the cars in ascending order and check if a car
+# moving forward collides with a car moving backward. If 
+# yes, we increment the collision count and continue.
 
 def car_race_collision(n: int) -> int:
     forward_cars = sorted(list(range(n)))
